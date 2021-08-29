@@ -1,0 +1,9 @@
+---
+- name: start apache2 server
+  hosts: Servers
+  become: yes
+  tasks: 
+  - name: start apache2 service 
+    ansible.builtin.service: 
+      name: apache2
+      state: started

@@ -1,0 +1,7 @@
+---
+- name: set up port 
+  hosts: Servers
+  become: yes
+  tasks: 
+  - name: Set up port
+    command: sudo echo 'Listen 8080' >> /etc/apache2/ports.conf

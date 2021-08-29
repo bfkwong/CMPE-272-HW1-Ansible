@@ -1,0 +1,7 @@
+---
+- name: create new html file
+  hosts: Servers
+  become: yes
+  tasks: 
+  - name: new html files 
+    command: sudo bash -c 'echo "<h1>Hello World from SJSU</h1>" > /var/www/html/index.html' 

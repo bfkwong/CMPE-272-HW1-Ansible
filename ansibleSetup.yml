@@ -1,0 +1,8 @@
+---
+- name: Install and setup apache2 services
+  hosts: Servers
+  become: yes
+  tasks: 
+  - name: install apache web server
+    apt: 
+     name: apache2
